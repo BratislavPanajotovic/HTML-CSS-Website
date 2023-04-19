@@ -179,3 +179,32 @@ button:hover {
 #mobile-menu.is-active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
+
+/*? Main section with mini  robot CSS*/
+.main {
+  background-color: darkgrey;
+}
+.main__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90vh;
+  background-color: darkgrey;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  padding: 0 50px;
+}
+
+.main__content h1 {
+  font-size: 4rem;
+  background-color: #f77062;
+  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
