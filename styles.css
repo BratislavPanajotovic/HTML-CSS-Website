@@ -5,7 +5,7 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 .navbar {
-  background: gray;
+  background: rgb(0, 0, 0);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -113,10 +113,10 @@ button:hover {
   transition: all 0.5s ease;
   height: 50vh;
   z-index: -1;
-  background: gray;
+  background: rgb(0, 0, 0);
 }
 .navbar__menu.active {
-  background: gray;
+  background: rgb(0, 0, 0);
   top: 100%;
   opacity: 1;
   transition: all 0.5s ease;
@@ -182,7 +182,7 @@ button:hover {
 
 /*? Main section with mini  robot CSS*/
 .main {
-  background-color: darkgrey;
+  background-color: rgb(0, 0, 0);
 }
 .main__container {
   display: grid;
@@ -191,7 +191,7 @@ button:hover {
   justify-content: center;
   margin: 0 auto;
   height: 90vh;
-  background-color: darkgrey;
+  background-color: rgb(0, 0, 0);
   z-index: 1;
   width: 100%;
   max-width: 1300px;
@@ -319,7 +319,7 @@ button:hover {
 }
 /*! Services Section CSS */
 .services {
-  background-color: darkgray;
+  background-color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -400,10 +400,32 @@ button:hover {
   top: 440px;
   left: 30px;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .services__card:hover {
   transform: scale(1.075);
   transition: 0.2s ease-in-out;
   cursor: pointer;
+}
+@media screen and (max-width: 960px) {
+  .services {
+    height: 1600px;
+  }
+  .services h1 {
+    font-size: 2rem;
+    margin-top: 12rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .services {
+    height: 1400px;
+  }
+  .services h1 {
+    font-size: 1.2rem;
+    margin-top: 12rem;
+  }
+  .services__card {
+    width: 300px;
+  }
 }
