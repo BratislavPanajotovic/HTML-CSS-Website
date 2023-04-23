@@ -42,10 +42,10 @@
   margin-right: 0.5rem;
 }
 .navbar__menu {
-  /* display: flex;
+  display: flex;
   align-items: center;
   list-style: none;
-  text-align: center; */
+  text-align: center;
 }
 .navbar__item {
   height: 80px;
@@ -64,17 +64,17 @@
   justify-content: center;
   align-items: center;
   padding: 0 1rem;
-  width: 100%;
+  /* width: 100%; */
 }
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 30px;
   height: 100%;
-  width: 100%;
-  border: none;
+  /* width: auto; */
+  /* border: none; */
   outline: none;
   border-radius: 4px;
   background: #f77062;
@@ -103,13 +103,12 @@ button:hover {
   }
 }
 .navbar__menu {
-  display: grid;
-  grid-template-columns: auto;
+  display: inline-table;
   margin: 0;
   width: 10%;
   position: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: center;
+  align-items: center;
   top: -1000px;
   opacity: 0;
   transition: all 0.5s ease;
@@ -118,16 +117,16 @@ button:hover {
   background: rgb(0, 0, 0);
 }
 .navbar__menu.active {
-  background: rgb(0, 0, 0);
+  background: none;
   top: 100%;
   opacity: 1;
   transition: all 0.5s ease;
   z-index: 99;
   height: 4vh;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   position: flex;
-  justify-content: right;
-  align-items: right;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar__logo {
@@ -161,16 +160,17 @@ button:hover {
   transform: translate(5%, 20%);
 }
 .navbar__btn {
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding-bottom: 2rem;
-  width: 100%;
-  padding-right: 150px;
+  /* width: 100%; */
 }
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   height: 80px;
   margin: 0;
 }
@@ -189,7 +189,7 @@ button:hover {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/*? Main section with mini  robot CSS*/
+/*? Main section with mini robot CSS*/
 .main {
   background-color: rgb(0, 0, 0);
 }
