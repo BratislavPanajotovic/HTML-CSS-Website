@@ -1,29 +1,21 @@
 "use strict";
 const menu = document.querySelector("#mobile-menu");
 const menuLinks = document.querySelector(".navbar__menu");
-const navbar = document.querySelector(".navbar");
-const main = document.querySelector(".main");
-const services = document.querySelector(".services");
-const footer = document.querySelector(".footer__container");
-
+//! Menu behaviour //
 menu.addEventListener("click", function () {
   menu.classList.toggle("is-active");
   menuLinks.classList.toggle("active");
 });
-menuLinks.addEventListener("click", function () {
-  menu.classList.toggle("is-active");
-  menuLinks.classList.toggle("active");
-});
 
-main.addEventListener("click", function () {
-  menu.classList.toggle("is-active");
-  menuLinks.classList.toggle("active");
+function closeMenu() {
+  if (menu.classList.contains("is-active")) {
+    menuLinks.classList.toggle("active");
+    menu.classList.toggle("is-active");
+  }
+}
+document.addEventListener("click", function (e) {
+  if (!menu.contains(e.target)) {
+    closeMenu();
+  }
 });
-services.addEventListener("click", function () {
-  menu.classList.toggle("is-active");
-  menuLinks.classList.toggle("active");
-});
-footer.addEventListener("click", function () {
-  menu.classList.toggle("is-active");
-  menuLinks.classList.toggle("active");
-});
+//!Menu behaviour//

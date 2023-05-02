@@ -273,11 +273,13 @@ button:hover {
 }
 .main__img--container {
   text-align: center;
+  object-fit: contain;
 }
 #main__img {
   height: 650px;
   width: 80%;
   border-radius: 8px;
+  object-fit: contain;
 }
 /*? Mobile responsive */
 @media screen and (max-width: 768px) {
