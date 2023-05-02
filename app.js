@@ -18,5 +18,9 @@ document.addEventListener("click", function (e) {
     closeMenu();
   }
 });
-s;
+document.addEventListener("scroll", function (e) {
+  if (!menu.contains(e.target)) {
+    closeMenu();
+  }
+});
 //!Menu behaviour//

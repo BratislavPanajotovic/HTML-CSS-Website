@@ -89,8 +89,6 @@ button:hover {
   transition: all 0.3s ease;
 }
 
-/*!Sta je ovo @media ? */
-
 @media screen and (max-width: 250px) {
   .navbar__container {
     display: flex;
@@ -149,8 +147,6 @@ button:hover {
   width: 100%;
   display: table;
 }
-
-/*! #mobile-menu? */
 
 #mobile-menu {
   position: absolute;
@@ -325,7 +321,7 @@ button:hover {
   }
   .main__content h1 {
     font-size: 2.5 rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .main__content h2 {
@@ -482,6 +478,16 @@ button:hover {
   .services h1 {
     font-size: 2rem;
     margin-top: 12rem;
+  }
+}
+@media screen and (max-width: 760px) {
+  .services {
+    height: 1600px;
+  }
+  .services h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 3.5rem;
   }
 }
 @media screen and (max-width: 480px) {
